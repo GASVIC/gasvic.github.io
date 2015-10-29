@@ -5,7 +5,7 @@ layout: main
 
 This is a simple markdown file, which could be our home page.
 
-Example second paragraph. Lorem ipsum dolor sit amet.
+Example second paragraph. Lorem ipsum dolor sit amet. Proof of edit.
 
 This site primarily stores show history.
 
