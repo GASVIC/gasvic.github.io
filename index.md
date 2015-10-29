@@ -1,4 +1,5 @@
 ---
+layout: main
 ---
 # Gilbert & Sullivan Opera Victoria
 
