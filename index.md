@@ -12,9 +12,7 @@ This site primarily stores show history.
 ## Upcoming shows
 
 {% for post in site.posts %}
-{% if post.year >= 2015 %}
 * {{ post.month }} {{ post.year }}: [{{ post.title }}]({{ post.url }})
-{% endif %}
 {% endfor %}
 
 ## Archive
