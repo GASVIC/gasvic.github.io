@@ -4,6 +4,7 @@ layout: main
 {{ content }}
 <h3>Performances of this work</h3>
 <p>My title is: {{ page.title }}</p>
+<p>My URL is: {{ page.url }}</p>
 <ul>
 {% for post in site.posts %}
 {% if post.title == page.title and post.url != page.url %}
