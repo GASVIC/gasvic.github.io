@@ -3,6 +3,7 @@ layout: main
 ---
 {{ content }}
 <h3>Performances of this work</h3>
+{% assign show = page.url | split: "/" | last %}
 <ul>
 {% for post in site.posts %}
 {% if post.url contains show %}
