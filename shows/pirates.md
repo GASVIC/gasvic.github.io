@@ -1,5 +1,6 @@
 ---
 layout: showindex
+title: The Pirates of Penzance
 ---
 
 # Pirates of Penzance
