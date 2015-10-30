@@ -6,7 +6,7 @@ Abstract
 ========
 
 This document proposes to replace the current Joomla-based web site with a flat
-file structure built from reStructuredText files managed through a git repo.
+file structure built from text files managed through a git repo.
 
 Rationale
 =========
