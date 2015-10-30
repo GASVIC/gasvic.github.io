@@ -2,5 +2,10 @@
 layout: main
 ---
 {{ content }}
-<p>-- Content from show.html --</p>
-<a href="">Other performances of this_show</a>
+<ul>
+{% for post in site.posts %}
+{% if post.title == page.title and post.url != page.url %}
+<li><a href="{{post.url}}">{{ post.date | date: "%b %Y" }} {{post.title}}</a></li>
+{% endif %}
+{% endfor %}
+</ul>
