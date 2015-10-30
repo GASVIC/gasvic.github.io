@@ -19,11 +19,6 @@ This site primarily stores show history.
 
 ## Archive
 
-### By decade
+By decade - not yet implemented.
 
-Not yet implemented.
-
-### By show
-
-* [Pirates of Penzance](shows/pirates.html)
-* [Princess Ida](shows/princessida.html)
+[By show](shows/)
