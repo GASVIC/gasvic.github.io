@@ -11,9 +11,11 @@ This site primarily stores show history.
 
 ## Upcoming shows
 
-* Apr/May 2013: [Pirates of Penzance](shows/2013/1pirates.html)
-* Sep 2013: [The Geisha](shows/2013/2geisha.html)
-* Oct 2013: [Princess Ida](shows/2013/3princessida.html)
+{% for post in site.posts %}
+{% if post.year >= 2015 %}
+* {{ post.month }} {{ post.year }}: [{{ post.title }}]({{ post.url }})
+{% endif %}
+{% endfor %}
 
 ## Archive
 
