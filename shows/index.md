@@ -6,6 +6,6 @@ layout: main
 History is available for the following shows:
 {% for pg in site.pages %}
 {% if pg.url contains "/shows/" %}
-* [{{ post.date | date: "%b %Y" }} {{post.title}}]({{post.url}})
+* [{{ pg.date | date: "%b %Y" }} {{pg.title}}]({{pg.url}})
 {% endif %}
 {% endfor %}
