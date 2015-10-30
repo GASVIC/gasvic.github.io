@@ -13,7 +13,7 @@ This site primarily stores show history.
 
 {% for post in site.posts %}
 {% if post.date >= site.time %}
-* {{ post.month }} {{ post.year }}: [{{ post.title }}]({{ post.url }})
+* {{ post.date | date_to_string }}: [{{ post.title }}]({{ post.url }})
 {% endif %}
 {% endfor %}
 
