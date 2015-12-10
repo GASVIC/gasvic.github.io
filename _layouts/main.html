@@ -1,116 +1,148 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<title>{{ page.title }} - Gilbert &amp; Sullivan Opera Victoria</title>
-<link rel="stylesheet" href="/gsvicwww.css">
-<script type="text/javascript">
-function clearText(field)
-{
-    if (field.defaultValue == field.value) field.value = '';
-    else if (field.value == '') field.value = field.defaultValue;
-}
-</script>
-<script type="text/javascript" src="/js/jquery.min.js"></script>
-<script type="text/javascript">
+	<!--Meta Tags-->
+	<meta charset="UTF-8">
+	<title>{{ page.title }} - Gilbert &amp; Sullivan Opera Victoria</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<!--CSS Links -->
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/skeleton.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/main.css">
+	<!--Scripts-->
+	 	<script src="http://code.jquery.com/jquery.min.js"></script>
+	  <script src="js/app.js"></script>
 
-ddsmoothmenu.init({
-	mainmenuid: "templatemo_menu", //menu DIV id
-	orientation: 'h', //Horizontal or vertical menu: Set to "h" or "v"
-	classname: 'ddsmoothmenu', //class added to menu's outer DIV
-	//customtheme: ["#1c5a80", "#18374a"],
-	contentsource: "markup" //"markup" or ["container_id", "path_to_menu_file"]
-})
-
-</script>
-<script type="text/javascript" src="/js/jquery.js"></script>
-<script type="text/javascript" src="/js/jquery.easing.js"></script>
-<script type="text/javascript" src="/js/script.js"></script>
-<script type="text/javascript">
- $(document).ready( function(){	
-		var buttons = { previous:$('#lofslidecontent45 .lof-previous') ,
-						next:$('#lofslidecontent45 .lof-next') };
-						
-		$obj = $('#lofslidecontent45').lofJSidernews( { interval : 4000,
-												direction		: 'opacitys',	
-											 	easing			: 'easeInOutExpo',
-												duration		: 1200,
-												auto		 	: false,
-												maxItemDisplay  : 4,
-												navPosition     : 'horizontal', // horizontal
-												navigatorHeight : 32,
-												navigatorWidth  : 80,
-												mainWidth:940,
-												buttons			: buttons} );	
-	});
-</script>
+	  <!--Favicon-->
+	   <link rel="icon" type="image/png" href="#">
 </head>
+
 <body>
-<div id="templatemo_wrapper">
+		<!--Primary Page Layout-->
+<section class="hero">
+		<nav>
+		<div class="logo">
+			<a href="#">
+				<svg width="251px" height="170px">
+				<image xlink:href="img/logo-lg.svg" height="251px" width="150px"/>
+			</svg>
+			</a>
+		</div>
+		
+			<ul id="nav">
+				<li>
+				<a href="comingevents.html">Coming Events</a>
+				</li>
+				<li>
+					<a href="#">Season</a>
+				</li>
+				<li>
+					<a href="#">Society</a>
+				</li>
+				<li>
+					<a href="#">Shop</a>
+				</li>
+				<li>
+					<a href="">Links</a>
+				</li>
+				<button>Menu</button>
+			</ul>
+		 </nav>	
+		
+
+			<!--Main Content-->
+			<article class="event-spotlight">
+				<div class="flex-container-2">
+						<a href="#">
+							<h2>Event Title</h2>
+						</a>
+				</div>
+				<button class="button-primary">Buy Tickets</button>
+			</article>	
+		</section>
 	
-    <div id="templatemo_header">
-    	<div id="site_title"> <h1><a href="http://www.gilbertandsullivan.org.au">Gilbert and Sullivan Opera Victoria</a></h1></div>
-        
-        <div class="cleaner"></div>
-    </div> <!-- END of header -->
-    <div id="templatemo_menu" class="ddsmoothmenu">
-        <ul>
-            <li><a href="http://www.gilbertandsullivan.org.au/index.php?option=com_content&amp;view=frontpage&amp;Itemid=498" class="selected">HOME<span>Latest News</span></a></li>
-            <li><a href="http://www.gilbertandsullivan.org.au/index.php?option=com_content&amp;view=frontpage&amp;Itemid=462">COMING EVENTS<span></span></a>
-                <ul>
-                    <li><a href="http://www.gilbertandsullivan.org.au/index.php?option=com_content&amp;view=article&amp;id=648&amp;Itemid=507">The Pirates of Penzance</a></li>
-                    <li><a href="http://www.gilbertandsullivan.org.au/index.php?option=com_content&amp;view=article&amp;id=649&amp;Itemid=531">The Geisha</a></li>
-                </ul>
-            </li>
-			<li><a href="http://www.gilbertandsullivan.org.au/index.php?option=com_content&amp;view=article&amp;id=647&amp;Itemid=529">SEASON 2013<span></span></a>
-                <ul>
-                    <li><a href="http://www.gilbertandsullivan.org.au/index.php?option=com_content&amp;view=article&amp;id=648&amp;Itemid=507">The Pirates of Penzance</a></li>
-                    <li><a href="http://www.gilbertandsullivan.org.au/index.php?option=com_content&amp;view=article&amp;id=649&amp;Itemid=531">The Geisha</a></li>
-                    <li><a href="http://www.gilbertandsullivan.org.au/index.php?option=com_content&amp;view=article&amp;id=650&amp;Itemid=532">Princess Ida</a></li>
-					<li><a href="http://www.gilbertandsullivan.org.au/index.php?option=com_content&amp;view=article&amp;id=647&amp;Itemid=523">Subscribe</a></li>
-                </ul>
-            </li>
-			<li><a href="about.html">AUDITIONS AND SCHOLARSHIPS<span></span></a>
-                <ul>
-                    <li><a href="http://www.gilbertandsullivan.org.au/index.php?option=com_content&amp;view=category&amp;layout=blog&amp;id=13&amp;Itemid=520">Auditions for The Geisha</a></li>
-                    <li><a href="http://www.gilbertandsullivan.org.au/index.php?option=com_content&amp;view=article&amp;id=53&amp;Itemid=486">Bruce Doery Scholarship</a></li>
-                </ul>
-            </li>
-			<li><a href="about.html">Society<span>78 Years Young</span></a>
-                <ul>
-                    <li><a href="http://www.templatemo.com/page/1">Committee</a></li>
-                    <li><a href="http://www.templatemo.com/page/2">Concert Party</a></li>
-                    <li><a href="http://www.templatemo.com/page/3">Library</a></li>
-                    <li><a href="http://www.templatemo.com/page/4">Members</a></li>
-                    <li><a href="http://www.templatemo.com/page/5">TanTanTara!</a></li>
-                    <li><a href="http://www.templatemo.com/page/4">FAQs</a></li>
-                    <li><a href="http://www.templatemo.com/page/5">Join Us</a></li>
-                    <li><a href="http://www.templatemo.com/page/4">About The Society</a></li>
-               </ul>
+	{{ content }}
+
+	<footer>
+		<div class="container">
+	<div class="row">
+		<div class="four columns">
+			<h4>Contact</h4>
+				<ul class="links-ul">
+					<li class="links">
+						<p>Auditions<br><br>and Scholarships</p>
+					</li>
+					<li>
+						<p>Links</p>
+					</li>
+					<li>
+						<p>Blog</p>
+					</li>
+					<li>
+						<p>Documents</p>
+					</li>
+				</ul>
+			</div>
+	
+			<div class="four columns">
+				<h4>Connect</h4>
+				<ul class="social">
+					<li class="social">
+						<a href="#">
+							<i class="fa fa-envelope-o fa-lg"></i>
+						</a>
+					</li>
+					<li class="social">
+						<a href="">
+						<i class="fa fa-facebook fa-lg"></i>
+						</a>
+					</li>
+					<li class="social">
+						<a href="">
+							<i class="fa fa-instagram fa-lg"></i>
+						</a>
+					</li>
+					<li class="social">
+						<a href="">
+							<i class="fa fa-twitter fa-lg"></i>
+						</a>
+					</li>
+				</ul>
+			</div>
 			
-            </li>
-            <li><a href="portfolio.html">Archive<span>Past Shows</span></a>
-                <ul>
-                    <li><a href="http://www.templatemo.com/page/1">Archive Welcome</a></li>
-                    <li><a href="http://www.templatemo.com/page/2">By Show</a></li>
-                    <li><a href="http://www.templatemo.com/page/3">By Year</a></li>
-                    <li><a href="http://www.templatemo.com/page/4">Playbills</a></li>
-                    <li><a href="http://www.templatemo.com/page/5">What's New</a></li>
-               </ul>
-			</li>
-			
-			<li><a href="blog.html">Shop</a></li>
-			<li><a href="blog.html">Documents</a></li>
-			<li><a href="blog.html">Links</a></li>			
-			<li><a href="blog.html">Blog<span>Our latest news</span></a></li>
-			<li><a href="contact.html">Contact<span>Get to us</span></a></li>
-        </ul>
-        <br style="clear: left" />
-    </div> <!-- END of menu -->
-<br style="clear: both" />
-</div> <!-- END of wrapper -->
-{{ content }}
-<footer>
-<small>Propose changes on GitHub: <a href="https://github.com/GASVIC/gasvic.github.io">gasvic.github.io</a></small>
-</footer>
+			<div id="position">
+			<div class="four columns">
+				<h4>Address</h4>
+				<p id="address">The Gilbert and Sullivan Society of Victoria, Inc. ABN 82 367 025 584<br>
+				P O Box 2184, Blackburn South, Victoria, 3130, Australia<br>
+				Skipper Holland Hall<br>
+				cnr Hunter Dve and McCracken Ave Blackburn South Vic 3130</p>
+			</div>
+		</div>
+		</div>
+		<div id="lightbox">
+				<ul>
+					<li><i class="fa fa-times fa-lg"></i></li>
+					<li>
+						<a href="comingevents.html">Coming Events</a>
+					</li>
+					<li>
+						<a href="#">Season</a>
+					</li>
+					<li>
+						<a href="#">Society</a>
+					</li>
+					<li>
+						<a href="#">Shop</a>
+					</li>
+					<li>
+						<a href="">Links</a>
+					</li>
+				</ul>
+		</div>
+		<div><small>Propose changes on GitHub: <a href="https://github.com/GASVIC/gasvic.github.io">gasvic.github.io</a></small></div>
+		<div><small>Web site layout courtesy of <a href="#">Caleb Zeringue</a></small></div>
+	</footer>
 </body>
 </html>
