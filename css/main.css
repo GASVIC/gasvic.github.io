@@ -1,0 +1,293 @@
+/* Created by Caleb Zeringue */
+/*General Declarations*/
+* {
+  box-sizing:border-box;
+}
+body {
+	height: 100%;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+a {
+	text-decoration: none;
+	color: white;
+  transition: color 0.3s ease;
+  -webkit-transition: color 0.3s ease;
+}
+
+
+
+a:hover {
+	color:grey;
+}
+/*Hero background*/
+.hero {
+	height: 41em;
+	background-image: url("../img/G&Sbg1.jpg");
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+
+}
+/*nav*/
+.hero nav, #comingEvents nav {
+	position: absolute;
+  max-width: 1096px;
+  font-weight: bolder;
+}
+.events span {
+	font-size: 2em;
+}
+.hero nav, #comingEvents nav {
+	margin-left: 2em;
+  position: relative;
+}
+
+#nav {
+	list-style: none;
+  position: relative;
+  float: right;
+  margin: -6em 3em 0 0;
+
+}
+#nav li {
+	color: white;
+  display: inline;
+  padding: 0 1.5em;
+}
+
+#nav button {
+  display: none;
+}
+
+#nav button {
+  color: white;
+}
+.logo {
+	margin-right: 2em;
+}
+.logo svg {
+	padding-bottom: 2em;
+	padding-right: 2em;
+
+}
+
+
+.flex-container {
+  padding-left: 4em;
+  margin-left:10em;
+  padding-top: 4em;
+  list-style: none;
+  width: 70%;
+  position: absolute;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  
+  -webkit-flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+
+.flex-item {
+  padding-right: 2em;
+  color: white;
+  font-weight: bold;
+  font-size: 1em;
+
+}
+
+/*Main Content*/
+
+.event-spotlight {
+  margin-top: 10em;
+  width: 50%;
+  position: absolute;
+  left:0;
+  right:0;
+  margin-left:auto;
+  margin-right:auto;
+}
+.event-spotlight,flex-item h2,flex-item {
+	text-align: center;
+}
+.flex-container-2 {
+  color: white;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  
+  -webkit-flex-flow: row wrap;
+  justify-content: space-around;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  
+  -webkit-flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+.flex-item h2 {
+	border: solid 1px red;
+	color: white;
+	text-align: center;
+}
+
+
+
+/*footer styling*/
+footer {
+  background-color:#5D6062;
+  color:white;
+  text-align: center;
+}
+.columns {
+  margin-left: 0;
+}
+footer .container {
+  width: 75%;
+  margin: 0 auto;
+}
+#position p {
+text-align: left;
+width: 80%;
+margin-left: 4em;
+}
+
+footer h4 {
+   color: white;
+  font-size: 2em;
+  padding-top: .5em;
+
+}
+
+footer ul {
+  list-style: none;
+}
+footer li {
+  padding: 0 0;
+}
+
+footer p {
+  font-size: 0.8em;
+  line-height: .9em;
+
+}
+
+#address {
+  line-height: .989em;
+}
+ul.social {
+  margin-top: 3em;
+}
+
+ li.social {
+  width: 20px;
+  height: 20px;
+  display: inline;
+  padding: 0 .5em;
+}
+
+#lightbox {
+  display: none;
+  position: fixed;
+  top:0;
+  left: 0;
+  width:100%;
+  height: 100%;
+  background: rgba(0,0,0,.7) repeat;
+}
+#lightbox ul {
+  padding-top: 5em;
+}
+#lightbox i {
+ position: fixed;
+ top:3em;
+ right: 3em;
+}
+#lightbox li {
+ text-align: center;
+ color: white;
+  list-style: none;
+  padding-top: 0.5em;
+}
+
+/*Coming Events Page */
+#comingEvents {
+  height: 30em;
+  background-image: url("../img/comingevents.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: absolute;
+ 
+}
+
+#etitle {
+  color: white;
+  text-align: center;
+  padding-top: 2em;
+  height: 5em;
+  text-decoration: underline;
+  font-family: 'Abril Fatface', cursive;
+  word-spacing: .2em;
+  letter-spacing: .1em;
+}
+/*Event list wrapper*/
+#eventlist  {
+  padding-top: 1em;
+  list-style: none;
+  font-weight: 700;
+  text-align: center;
+
+}
+/*Styling of event list blocks*/
+#eventlist li {
+display: inline-block;
+padding: 2em;
+margin: .5em 1em;
+font-family: 'Open Sans', sans-serif;
+font-size: .8em;
+background-color: #C5C6C8;
+width: 12.5em;
+height: 12.5em;
+transition: background-color, 0.8s, ease;
+transition: color, 0.8s, ease;
+}
+/*Event list transition*/
+#eventlist li:hover {
+  background-color:#28231D;
+  color: white;
+  cursor: pointer;
+}
+
+
+
+/*Media Queries*/
+
+@media only screen and (max-width: 812px) {
+  #nav li {
+    display:none;
+    width: 100%;
+  }
+  #nav button {
+  display: inline;
+  margin-right:-2em;
+}
+
+}
+@media only screen and (max-width: 540px) {
+
+  #eventlist li {
+  margin-top: 8em;
+  font-size: .6em;
+}
+}
+
+
