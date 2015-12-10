@@ -23,7 +23,7 @@ a:hover {
 /*Hero background*/
 .hero {
 	height: 41em;
-	background-image: url("../img/G&Sbg1.jpg");
+	background-image: url("../images/G&Sbg1.jpg");
 	background-size: cover;
 	background-position: center center;
 	background-repeat: no-repeat;
