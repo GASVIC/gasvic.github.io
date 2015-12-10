@@ -30,10 +30,6 @@ manual work (albeit script-assisted). This would also be a good opportunity
 to do some heavy-duty data cleaning at the human level, eg removing "tickets
 are still on sale" from years-ago shows.
 
-The shop will not be affected by this, so a plan will be needed which keeps
-the same shop we currently have. (Long-term, there are many options for a
-replacement shop, but they would be separate proposals.)
-
 There would be no WYSIWYG editor; instead, you have a simple text markup that
 looks like its result. For serious formatting changes, this would be something
 new to learn, but most people won't need to learn it. If someone proposes a
@@ -55,3 +51,28 @@ Timing
 The Society is currently considering rebranding itself as GASVIC or some other.
 Whatever actual acronym and name are eventually accepted, this change will be
 a good opportunity to revamp the web site.
+
+The Shop
+========
+
+Orthogonally to this proposal, we do need a new shop. The current one has a
+number of issues; most notably, it depends on capturing credit card details,
+saving them offline, and having a human being do the actual charging of cards.
+This is a problem because (a) it's manual and has delays, where people expect
+web site charging to be instant; (b) it depends on being allowed to charge a
+card without knowing its CVV (since we legally can't save them); and (c) it's
+pointless extra work and extra chances to get things wrong.
+
+What do we need from the shop?
+
+* Sales of products which we manufacture ourselves (DVDs, mugs, etc)
+* Limited-stock items eg back-issues of TTT or show posters
+* Drop-shipment of JeeveS CDs
+* Non-physical purchases eg membership renewal (new memberships nice but not critical)
+* Possibly made-to-order items eg tees, mugs, posters if we want to go that route
+* Postage, with pick-up option
+* Maybe "cash in person" payment option?? Not practical for all item types.
+
+The shop should ideally be self-maintaining. Someone adds items to it, and the
+orders and money get sent to us. It should _definitely_ have no security burden
+for the normal case; SSL, card number handling, etc should all be done for us.
